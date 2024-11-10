@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+
+    <style>
+      body {
+        background-color: rgb(167, 156, 219);
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThtv7x4JcPUgritiVILymsG873aWG5Sb_gOw&s");
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-attachment: fixed;
+        background-size: 200px;
+      }
+
+      #grad1 {
+        text-align: center;
+        margin-top: 200px;
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        height: 200px;
+        background-color: red;
+        background-image: linear-gradient(
+          to top right,
+          red,
+          orange,
+          yellow,
+          green,
+          blue,
+          indigo,
+          violet
+        );
+      }
+
+      @keyframes example {
+        0% {
+          background-color: red;
+        }
+        25% {
+          background-color: yellow;
+        }
+        50% {
+          background-color: green;
+        }
+        100% {
+          background-color: blue;
+        }
+      }
+
+      .animate {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: example;
+        animation-duration: 8s;
+      }
+    </style>
+  </head>
+  <body>
+    Hello World
+    <div id="grad1">Welcome to Codingal</div>
+    <div class="animate">hi</div>
+  </body>
+</html>
